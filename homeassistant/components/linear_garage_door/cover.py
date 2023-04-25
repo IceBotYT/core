@@ -95,22 +95,22 @@ class LinearCoverEntity(CoordinatorEntity[LinearUpdateCoordinator], CoverEntity)
         )
 
     @property
-    def is_closed(self) -> bool:
+    def is_closed(self) -> bool:  # sourcery skip: remove-unnecessary-cast
         """Return if cover is closed."""
         return bool(self._get_data("Open_B") == "false")
 
     @property
-    def is_opened(self) -> bool:
+    def is_opened(self) -> bool:  # sourcery skip: remove-unnecessary-cast
         """Return if cover is open."""
         return bool(self._get_data("Open_B") == "true")
 
     @property
-    def is_opening(self) -> bool:
+    def is_opening(self) -> bool:  # sourcery skip: remove-unnecessary-cast
         """Return if cover is opening."""
         return bool(self._get_data("Opening_P") == "0")
 
     @property
-    def is_closing(self) -> bool:
+    def is_closing(self) -> bool:  # sourcery skip: remove-unnecessary-cast
         """Return if cover is closing."""
         return bool(self._get_data("Opening_P") == "100")
 
