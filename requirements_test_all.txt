@@ -983,10 +983,7 @@ linear-garage-door==0.2.7
 lmcloud==0.4.35
 
 # homeassistant.components.linear_garage_door
-linear-garage-door==0.2.5
-
-# homeassistant.components.linear_garage_door
-linear-garage-door==0.2.5
+linear-garage-door==0.2.7
 
 # homeassistant.components.logi_circle
 logi-circle==0.2.3
